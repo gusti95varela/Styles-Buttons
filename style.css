@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#menu{
+    background-color: #f8f8f8;
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,.16);
+}
+
+.header{
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.text-orange{
+    color: orange;
+}
+
+.links{
+    text-align: center;
+}
+
+.text-ul li{
+    list-style: none;
+    margin: 20px;
+}
+
+.text-ul a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.text-ul :hover{
+    color: orange;
+    transition: all 350ms ease-in-out;
+}
+
+#button-section{
+    width: 0;
+    padding: 117px 0;
+    margin-left: 21em;
+}
+
+.title h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.btn{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    align-items: center;
+    background: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(51,51,51,.2);
+    color: #333;
+    cursor: pointer;
+    height: 36px;
+    outline: none;
+    width: 110px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btn:hover{
+    background: #a7a7a7;
+    color: #333;
+    transition: all 350ms ease-in-out;
+
+}
+
+
+.btnImg{
+    display: none;
+    margin-top: 30px;
+    width: 450px;
+    height: auto;
+    opacity: 0;
+}
+
+@keyframes menuDisplay {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.btnImg.active{
+    display: flex;
+    animation: menuDisplay 350ms ease-in-out both;
+}
+
+
+.outline{
+    background: #fff;
+    border: 1px solid #3D5AFE;
+    color: #3D5AFE;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: all 350ms ease-in;
+}
+
+.outline:hover{
+    background: #2962FF1A;
+    color: #3D5AFE;
+    
+}
+
+.btnOutline{
+    display: none;
+    margin-top: 30px;
+    width: 450px;
+    height: auto;
+    opacity: 0;
+}
+
+.btnOutline.active{
+    display: flex;
+    animation: menuDisplay 350ms ease-in-out both;
+}
+
+
+.text{
+    background: #fff;
+    box-shadow: none;
+    color: #3D5AFE;
+    transition: all 350ms ease-in;
+}
+
+.text:hover{
+    background: #2962FF1A;
+    color: #3D5AFE;
+    
+}
+
+
+.btnText{
+    display: none;
+    margin-top: 30px;
+    width: 450px;
+    height: auto;
+    opacity: 0;
+}
+
+.btnText.active{
+    display: flex;
+    animation: menuDisplay 350ms ease-in-out both;
+}
+
+.disabledx2{
+    display: flex;
+    gap: 24px;
+}
+
+.disableShadow{
+    background: #3D5AFE;
+    color: white;
+    box-shadow: none;
+    transition: all 350ms ease-in;
+}
+
+.disableShadow:hover{
+    background: #fff;
+    color: white;
+    
+}
+
+.btnShadow{
+    display: none;
+    margin-top: 30px;
+    width: 450px;
+    height: auto;
+    opacity: 0;
+}
+
+.btnShadow.active{
+    display: flex;
+    animation: menuDisplay 350ms ease-in-out both;
+}
+
+.disabled{
+    background: #E0E0E0;
+    color: #9E9E9E;
+    transition: all 350ms ease-in;
+}
+
+.disabled:hover{
+    background: #fff;
+    box-shadow: none;
+    color: #9E9E9E;
+    
+}
+
+.btnDisabled{
+    display: none;
+    margin-top: 30px;
+    width: 450px;
+    height: auto;
+    opacity: 0;
+}
+
+.btnDisabled.active{
+    display: flex;
+    animation: menuDisplay 350ms ease-in-out both;
+}
+
+.cart{
+    display: flex;
+    gap: 24px;
+}
+
+.localGroceryStoreStart{
+    background: #2962FF;
+    color: white;
+    transition: all 350ms ease-in;
+}
+
+.localGroceryStoreStart:hover{
+    background: #fff;
+    border: 1px solid #2962FF;
+    color: #2962FF;
+}
+
+.btnStoreStart{
+    display: none;
+    margin-top: 30px;
+    width: 450px;
+    height: auto;
+    opacity: 0;
+}
+
+.btnStoreStart.active{
+    display: flex;
+    animation: menuDisplay 350ms ease-in-out both;
+}
+
+.localGroceryStoreEnd{
+    background: #fff;
+    color: #2962FF;
+    border: 1px solid #2962FF;
+}
+
+.localGroceryStoreEnd:hover{
+    background: #2962FF;
+    border: none;
+    color: #fff;
+}
+
+.btnStoreEnd{
+    display: none;
+    margin-top: 30px;
+    width: 450px;
+    height: auto;
+    opacity: 0;
+}
+
+.btnStoreEnd.active{
+    display: flex;
+    animation: menuDisplay 350ms ease-in-out both;
+}
+
+.tam{
+    display: flex;
+    gap: 24px;
+}
+
+.sm{
+    width: 73px;
+    height: 32px;
+    background: #2962FF;
+    color: white;
+}
+
+.sm:hover{
+    background: #fff;
+    color: #2962FF;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btnSm{
+    display: none;
+    margin-top: 30px;
+    width: 450px;
+    height: auto;
+    opacity: 0;
+}
+
+.btnSm.active{
+    display: flex;
+    animation: menuDisplay 350ms ease-in-out both;
+}
+
+.md{
+    width: 81px;
+    height: 36px;
+    background: #fff;
+    color: #2962FF;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.md:hover{
+    background: #2962FF;
+    color: #fff;
+    border: 1px solid #2962FF;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btnMd{
+    display: none;
+    margin-top: 30px;
+    width: 450px;
+    height: auto;
+    opacity: 0;
+}
+
+.btnMd.active{
+    display: flex;
+    animation: menuDisplay 350ms ease-in-out both;
+}
+
+.lg{
+    width: 93px;
+    height: 42px;
+    background: #fff;
+    color: #2962FF;
+    border: 1px solid #e2e0e0;
+}
+
+.lg:hover{
+    background: #fff;
+    color: #2962FF;
+    box-shadow: 1px 2px 14px rgba(0, 0, 0, 0.753);
+}
+
+.btnLg{
+    display: none;
+    margin-top: 30px;
+    width: 450px;
+    height: auto;
+    opacity: 0;
+}
+
+.btnLg.active{
+    display: flex;
+    animation: menuDisplay 350ms ease-in-out both;
+}
+
+
+.default{
+    display: flex;
+    gap: 24px;
+}
+
+.default-1{
+    background: #0039CB;
+    color: #fff;
+}
+
+.default-1:hover{
+    background-color: #2962FF;
+    color: #fff;
+}
+
+    
+.btnDefault-1{
+    display: none;
+    margin-top: 30px;
+    width: 450px;
+    height: auto;
+    opacity: 0;
+}
+
+.btnDefault-1.active{
+    display: flex;
+    animation: menuDisplay 350ms ease-in-out both;
+}
+
+.primary{
+    background: #2962FF;
+    color: #fff;
+}
+
+.primary:hover{
+    background: #0039CB;
+    color: #fff
+}
+
+.btnPrimary{
+    display: none;
+    margin-top: 30px;
+    width: 450px;
+    height: auto;
+    opacity: 0;
+}
+
+.btnPrimary.active{
+    display: flex;
+    animation: menuDisplay 350ms ease-in-out both;
+}
+
+.secondary{
+    background: #455A64;
+    color: white;
+}
+
+.secondary:hover{
+    background: #1C313A;
+    color: #fff;
+}
+
+.btnSecondary{
+    display: none;
+    margin-top: 30px;
+    width: 450px;
+    height: auto;
+    opacity: 0;
+}
+
+.btnSecondary.active{
+    display: flex;
+    animation: menuDisplay 350ms ease-in-out both;
+}
+
+/* MOBILE */
+
+@media (max-width: 624px) and (min-width: 320px){
+    #menu{
+        width: 100%;
+        display: flex;
+        position: static;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .links .text-ul{
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+    }
+
+    .text-ul li{
+        margin: 10px;
+    }
+
+    .text-ul a{
+        font-size: 12px;
+    }
+
+    .logo b{
+        position: relative;
+        top: 2em;
+    }
+    
+    #button-section{
+        margin-left: 1em;
+    }
+
+    .default{
+        display: block;
+    }
+
+    .default-1{
+        margin: 24px auto;
+    }
+
+    .primary{
+        margin: 24px auto;
+    }
+
+}
+
+
+
+
+
+
+
